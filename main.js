@@ -671,7 +671,9 @@ function turanFunc1() {
     // }
     // if (son == 1) {
     if (itmm.childNodes[1].textContent == tx1 || itmm.childNodes[3].textContent == ty1) {
-      if (!itmm.classList.contains('forms')) {
+      if ((!itmm.classList.contains('horse1') && !itmm.classList.contains('queen') &&
+        !itmm.classList.contains('king') && !itmm.classList.contains('bishop1') &&
+        !itmm.classList.contains('pow1'))) {
         itmm.classList.add('green')
 
         itmm.addEventListener('click', () => {
