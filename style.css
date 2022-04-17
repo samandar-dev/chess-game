@@ -1,0 +1,365 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.chess {
+  width: 100%;
+  height: 100vh;
+  background: #b77d33;
+}
+
+.container {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+.chess__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.chess__dosc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 576px;
+  height: auto;
+  transform-style: preserve-3d;
+}
+
+.chess__list {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  border: 20px solid rgb(102, 66, 32);
+  border-radius: 10px;
+  transition: all 0.6s ease;
+}
+
+.anim3D {
+  transform: rotateX(45deg) scale(1.3) translateY(-50px);
+}
+
+.chess__item {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  background: #777;
+  border: 1px solid rgb(126, 77, 3);
+  text-align: center;
+  line-height: 100px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+.itemBlack {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-image: url("/images/black.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 3;
+}
+
+.itemWhite {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-image: url("/images/white2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+.turan1 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+
+.turan2 {
+  position: relative;
+  background: #fff;
+  /* border: 1px solid #000; */
+  background-image: url("/images/forms1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+
+.horse1 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+
+.horse2 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+
+.bishop1 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+
+.bishop2 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+
+.queen {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms4.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+
+.king {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms5.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+
+.pow1 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms6.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+.pow2 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms6.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+.pow3 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms6.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+.pow4 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms6.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+.pow5 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms6.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+.pow6 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms6.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+.pow7 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms6.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+.pow8 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms6.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+
+.green {
+  position: relative;
+  box-shadow: 0 0 30px 13px #05e40d inset;
+  z-index: 4;
+  transition: all 0.1s ease;
+}
+
+.movitem2 {
+  position: relative;
+  color: #fff;
+  box-shadow: 0 0 30px 13px #fff inset;
+  transition: all 0.1s ease;
+  z-index: 5;
+}
+
+.xitem {
+  position: relative;
+  color: #fff;
+  box-shadow: 0 0 30px 1px rgb(201, 7, 7) inset;
+  transition: all 0.1s ease;
+  z-index: 5;
+}
+
+.movItem {
+  position: relative;
+  color: #fff;
+  box-shadow: 0 0 1px 1px #fff inset;
+  transition: all 0.1s ease;
+  z-index: 5;
+}
+
+.span1,
+.span2 {
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+
+.chess__forms {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 120px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.ches__forms-btns {
+  width: 80px;
+  height: 90px;
+  margin-bottom: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ches__forms-btns:hover {
+  background: rgb(162, 255, 13);
+}
+
+.forms__act {
+  background: rgb(162, 255, 13) !important;
+}
+
+.ches__forms-btns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shess__xy-box {
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  width: 90px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.shess__y-tit {
+  font-family: sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #333;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.shess__x-tit {
+  font-family: sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #333;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.chess__3d {
+  padding: 5px 30px;
+  border: none;
+  color: #222;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 600;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.chess__3d:hover {
+  color: #fff;
+  background: rgb(177, 125, 65);
+  border: 2px solid #000;
+}
